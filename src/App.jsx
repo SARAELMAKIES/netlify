@@ -10,8 +10,8 @@ function App() {
 
   let [arr, setArr] = useState([])
   let [status, setStatus] = useState("init")
-  const deleteFromArr = (name) => {
-    setArr(arr.filter(item => item.name != name))
+  const deleteFromArr = (id) => {
+    setArr(arr.filter(item => item._id  != id))
   }
   const addToArr = (newCourse) => {
     setArr([...arr, newCourse])
