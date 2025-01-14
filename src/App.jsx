@@ -18,12 +18,12 @@ function App() {
   }
   useEffect(() => {
     setStatus("pending")
-    axios.get("mongodb+srv://soul6787344:xZnXpbiCWixJmNJG@cluster0.qyvps.mongodb.net/serverkollleg?retryWrites=true&w=majority&appName=Cluster0").then(response => {
+    axios.get(" http://localhost:4000/api/product").then(response => {
       console.log(response);
       setArr(response.data)
     }).catch(err => {
       console.log(err);
-      alert("מצטערים אי אפשר להביא את הספרים" + err.message)
+      alert("מצטערים אי אפשר להביא את מוצרים" + err.message)
     }).finally(() => {
       setStatus("finish")
     })
