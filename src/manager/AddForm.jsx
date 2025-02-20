@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 
 import axios from "axios";
 
-const AddBookForm = ({ add }) => {
+const AddForm = ({ add }) => {
     const { register, handleSubmit } = useForm();
 
     const save = async (data) => {
@@ -45,7 +45,7 @@ const AddBookForm = ({ add }) => {
     );
 };
 
-export default AddBookForm;
+export default AddForm;
 
 // import { useForm } from "react-hook-form";
 // import axios from "axios";
